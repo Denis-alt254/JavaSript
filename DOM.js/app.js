@@ -1,0 +1,1 @@
+document.getElementById("mypage").innerHTML = "New Page";
