@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="checkCookies()">
+    <h1>My First Web Page</h1>
+    <p>My first paragraph.</p>
     <p id="mypage">Old page</p>
-    <script>document.getElementById("mypage").innerHTML = "New Page";</script>
+    <button id="myBtn">Try it!</button>
+    <button id="mouse">Mouse</button>
+    <script>
+        document.getElementById("mypage").innerHTML = "New Page";
+        document.getElementById("myBtn").onclick = displayDate;
+            function displayDate() {
+                document.getElementById("mypage").innerHTML = Date();
+            } 
+        myBtn.addEventListener("click", myfunction)
+            function myfunction(){
+                alert("Hello world!")
+            }
+        mouse.addEventListener("mouseover", mysecondfunction) 
+            function mysecondfunction(){
+                alert("Click It")
+            }    
+    </script>
 </body>
 </html>
