@@ -34,6 +34,6 @@ try {
 } catch (error) {
     console.error({message: error});
 } finally{
-    console.log("fail to execute");
+    console.log("Computing is over.");
 }
 //console.log(result)
